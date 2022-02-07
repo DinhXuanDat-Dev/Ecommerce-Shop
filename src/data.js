@@ -74,3 +74,26 @@ export const sliderItems = [
       img:"https://www.pngarts.com/files/3/Women-Jacket-PNG-High-Quality-Image.png",
     },
   ]
+
+  export const tripleSlideItems = [
+    {
+      image: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2hvcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      text: "slide 01"
+    },
+    {
+      image: "https://media.istockphoto.com/photos/happy-black-couple-holding-shopping-bags-on-the-street-picture-id1291768316?b=1&k=20&m=1291768316&s=170667a&w=0&h=d-D-4hJzIp4iQIsg-5rYL4ADV2lM_fHVv-N8sBmVH6Y=",
+      text: "slide 02"
+    },
+    {
+      image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      text: "slide 03"
+    },
+    {
+      image: "https://images.unsplash.com/photo-1546213290-e1b492ab3eee?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c2hvcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      text: "slide 04"
+    },
+    {
+      image: "https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2hvcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+      text: "slide 05"
+    }
+  ]

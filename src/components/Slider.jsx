@@ -84,35 +84,34 @@ const Desc = styled.p`
 
 const BTBORDER = styled.div`
   position: absolute;
+  transition: all 0.5s ease;
 `
 
 const Button = styled.button`
   padding: 10px;
-  font-size: 20px;
+  font-size: 25px;
   background-color: transparent;
   cursor: pointer;
   border: none;
   position: relative;
+  font-weight: bold;
+  color: slategray;
 
   &:hover{
     ${BTBORDER}:nth-of-type(1) {
       width: 100%;
-      transition: all 0.5s ease;
     }
 
     ${BTBORDER}:nth-of-type(2) {
       height: 100%;
-      transition: all 0.5s ease;
     }
 
     ${BTBORDER}:nth-of-type(3) {
       width: 100%;
-      transition: all 0.5s ease;
     }
 
     ${BTBORDER}:nth-of-type(4) {
       height: 100%;
-      transition: all 0.5s ease;
     }
   }
 
@@ -174,11 +173,12 @@ const Slider = () => {
             <InfoContainer>
               <Title>{item.title}</Title>
               <Desc>{item.desc}</Desc>
-              <Button>SHOW NOW
+              <Button>
                 <BTBORDER className="btn_border"></BTBORDER>
                 <BTBORDER className="btn_border"></BTBORDER>
                 <BTBORDER className="btn_border"></BTBORDER>
                 <BTBORDER className="btn_border"></BTBORDER>
+                SHOP NOW
               </Button>
             </InfoContainer>
           </Slide>
