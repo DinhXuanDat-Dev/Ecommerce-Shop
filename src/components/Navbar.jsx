@@ -1,8 +1,10 @@
 import { Badge } from "@material-ui/core";
 import { Search, ShoppingCartOutlined } from "@material-ui/icons";
+import { Link } from 'react-router-dom'
 import React from "react";
 import styled from "styled-components";
 import { mobile } from "../responsive";
+
 
 const Container = styled.div`
   height: 60px;
@@ -79,11 +81,17 @@ const Navbar = () => {
           </SearchContainer>
         </Left>
         <Center>
-          <Logo>Fashion website.</Logo>
+          <Link to="/" style={{ textDecoration: "none" }}>
+            <Logo>Fashion website.</Logo>
+          </Link>
         </Center>
         <Right>
-          <MenuItem>REGISTER</MenuItem>
-          <MenuItem>SIGN IN</MenuItem>
+          <Link to="/register">
+            <MenuItem>REGISTER</MenuItem>
+          </Link>
+          <Link to="/login">
+            <MenuItem>SIGN IN</MenuItem>
+          </Link>
           <MenuItem>
             <Badge badgeContent={4} color="primary">
               <ShoppingCartOutlined />

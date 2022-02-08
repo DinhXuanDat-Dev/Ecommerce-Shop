@@ -5,6 +5,7 @@ import Products from "../components/Products";
 import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
 import { mobile } from "../responsive";
+import MenuBar from "../components/MenuBar";
 
 const Container = styled.div``;
 
@@ -39,8 +40,9 @@ const Option = styled.option``;
 const ProductList = () => {
   return (
     <Container>
-      <Navbar />
       <Announcement />
+      <Navbar />
+      <MenuBar />
       <Title>Dresses</Title>
       <FilterContainer>
         <Filter>
