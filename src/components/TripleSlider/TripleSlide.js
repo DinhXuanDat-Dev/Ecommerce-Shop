@@ -13,8 +13,10 @@ import { tripleSlideItems} from "../../data"
 const CardExample = () => {
   const ref = React.useRef(StackedCarousel);
 
+  //Auto slide-to-right after 10s
   useEffect(() => {
-    setInterval(stuff, 100000);
+    const stuffInterval = setInterval(stuff, 10000);
+    return () => clearInterval(stuffInterval);
   }, []);
 
   function stuff() {
