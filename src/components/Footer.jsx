@@ -80,6 +80,17 @@ const ContactItem = styled.div`
   align-items: center;
 `;
 
+const ContactMail = styled.a`
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  color: #000;
+  text-decoration: none;
+  &:hover{
+    color: #545454;
+  }
+`
+
 const Payment = styled.img`
     width: 50%;
 `;
@@ -132,9 +143,9 @@ const Footer = () => {
         <ContactItem>
           <Phone style={{marginRight:"10px"}}/> 0961 050 7999
         </ContactItem>
-        <ContactItem>
+        <ContactMail href="mailto:datdinhxuan1602@gmail.com">
           <MailOutline style={{marginRight:"10px"}} /> datdinhxuan1602@gmail.com
-        </ContactItem>
+        </ContactMail>
         <Payment src="https://i.ibb.co/Qfvn4z6/payment.png" />
       </Right>
     </Container>

@@ -89,7 +89,7 @@ const BTBORDER = styled.div`
 const Button = styled.button`
   padding: 10px;
   font-size: 25px;
-  background-color: transparent;
+  background-color: #fff;
   cursor: pointer;
   border: none;
   position: relative;
@@ -119,7 +119,7 @@ const Button = styled.button`
     left: 0;
     width: 0;
     height: 0;
-    border-top: 1px solid #000;
+    border-top: solid slategray;
   }
 
   ${BTBORDER}:nth-of-type(2) {
@@ -127,7 +127,7 @@ const Button = styled.button`
     right: 0;
     width: 0;
     height: 0;
-    border-right: 1px solid #000;
+    border-right: solid slategray;
   }
 
   ${BTBORDER}:nth-of-type(3) {
@@ -135,7 +135,7 @@ const Button = styled.button`
     right: 0;
     width: 0;
     height: 0;
-    border-bottom: 1px solid #000;
+    border-bottom: solid slategray;
   }
 
   ${BTBORDER}:nth-of-type(4) {
@@ -143,7 +143,7 @@ const Button = styled.button`
     left: 0;
     width: 0;
     height: 0;
-    border-left: 1px solid #000;
+    border-left: solid slategray;
   }
 `;
 

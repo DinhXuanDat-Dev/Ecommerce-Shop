@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { mobile } from "../responsive";
-import {Routes, Route, Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 const Container = styled.div`
   height: 60px;
@@ -26,26 +26,47 @@ const Wrapper = styled.div`
 const MenuItem = styled.div`
   font-size: 14px;
   cursor: pointer;
-  margin-left: 25px;
+  margin-right: 25px;
   ${mobile({ fontSize: "12px", marginLeft: "10px" })}
+`;
+
+const StyledLink  = styled(Link)`
+  padding: 10px;
+  color: #fff;
+  position: relative;
+  &::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    z-index: -1;
+    background-color: #21406c;
+    transition: width 0.5s ease;
+  }
+  &:hover:before{
+    /* color: rgba(54,19,84,.6); */
+    width: 100%;
+  }
 `;
 
 const MenuBar = () => {
     return(
         <Container>
             <Wrapper>
-                <Link to="/">
+                <StyledLink to="/">
                     <MenuItem>Home</MenuItem>
-                </Link>
-                <Link to="/products">
+                </StyledLink>
+                <StyledLink to="/products">
                     <MenuItem>ProductList</MenuItem>
-                </Link>
-                <Link to="/product">
+                </StyledLink>
+                <StyledLink to="/product">
                     <MenuItem>Product</MenuItem>
-                </Link>
-                <Link to="/cart">
+                </StyledLink>
+                <StyledLink to="/cart">
                     <MenuItem>Cart</MenuItem>
-                </Link>
+                </StyledLink>
             </Wrapper>
         </Container>
         

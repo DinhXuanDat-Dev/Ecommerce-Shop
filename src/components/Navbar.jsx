@@ -4,6 +4,10 @@ import { Link } from 'react-router-dom'
 import React from "react";
 import styled from "styled-components";
 import { mobile } from "../responsive";
+import {
+  IconFlagJP,
+  IconFlagUS
+} from 'material-ui-flags';
 
 
 const Container = styled.div`
@@ -27,6 +31,8 @@ const Left = styled.div`
 
 const Language = styled.span`
   font-size: 14px;
+  display: flex;
+  flex-direction: column;
   cursor: pointer;
   ${mobile({ display: "none" })}
 `;
@@ -74,7 +80,9 @@ const Navbar = () => {
     <Container>
       <Wrapper>
         <Left>
-          <Language>EN</Language>
+          <Language>
+            <IconFlagUS />US
+          </Language>
           <SearchContainer>
             <Input placeholder="Search" />
             <Search style={{ color: "gray", fontSize: 16 }} />
