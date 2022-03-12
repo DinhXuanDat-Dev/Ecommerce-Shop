@@ -5,7 +5,6 @@ import React from "react";
 import styled from "styled-components";
 import { mobile } from "../responsive";
 import {
-  IconFlagJP,
   IconFlagUS
 } from 'material-ui-flags';
 
